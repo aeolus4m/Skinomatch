@@ -1,0 +1,229 @@
+/* فونت Vazirmatn از Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;600;700&display=swap');
+
+:root {
+  /* لطفاً این رنگ‌ها را با کدهای دقیق تصویرت جایگزین کن */
+  --color-primary: #cfe4d7;   /* سبز دکمه ادامه */
+  --color-accent: #f3d6cf;    /* صورتی ورود/ثبت‌نام */
+  --color-lines: #e5e7eb;     /* رنگ خطوط هدر/فوتر/دیوایدر */
+  --color-bg: #ffffff;        /* پس‌زمینه صفحه */
+  --color-text: #111827;      /* متن اصلی */
+  --color-muted: #6f6f6f;     /* متن توضیحات */
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: 'Vazirmatn', system-ui, -apple-system, Segoe UI, Roboto, 'Helvetica Neue', Arial, 'Noto Sans', 'Liberation Sans', sans-serif;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+}
+
+.rtl {
+  direction: rtl;
+  text-align: right;
+}
+
+/* کلاس‌های رنگ کمکی برای استفاده کنار Tailwind */
+.bg-primary { background-color: var(--color-primary); }
+.bg-accent { background-color: var(--color-accent); }
+.text-primary { color: var(--color-primary); }
+.text-accent { color: var(--color-accent); }
+.border-lines { border-color: var(--color-lines); }
+.bg-lines { background-color: var(--color-lines); }
+.text-muted { color: var(--color-muted); }
+
+/* اندازه‌ و فاصله‌های موبایل‌فرست */
+.container {
+  max-width: 640px;
+  margin-inline: auto;
+}
+
+/* دکمه‌ها */
+.btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+} 
+
+.actions {
+    display: flex;
+    gap: 14px;
+    justify-content: center;
+  }
+  
+  .btn {
+    flex: 1;
+    padding: 14px 0;
+    border-radius: 999px;
+    font-size: 15px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.2s ease;
+    display: flex; align-items: center; justify-content: center;
+  }
+  
+  .btn-primary {
+    background-color: #cfe4d7;
+    color: #245f46;
+  }
+  
+  .btn-primary:hover {
+    background-color: #bdd8c7;
+  }
+  
+  .btn-secondary {
+    background-color: #f3d6cf;
+    color: #7b3f34;
+  }
+  
+  .btn-secondary:hover {
+    background-color: #edc7bf;
+  }
+
+  /* اصلاح رنگ متن دکمه‌ها برای کلاس‌های موجود در صفحات بعدی */
+.btn.bg-primary {
+    color: #245f46 !important; /* متن سبز تیره مطابق فایل اصلی */
+  }
+  
+  .btn.bg-accent {
+    color: #7b3f34 !important; /* متن قهوه‌ای مطابق فایل اصلی */
+  }
+  
+
+
+/* هدر و فوتر مشترک */
+.app-header, .app-footer {
+  border-top: 1px solid var(--color-lines);
+  border-bottom: 1px solid var(--color-lines);
+  background-color: var(--color-bg);
+}
+
+.app-header {
+  border-bottom-width: 1px;
+}
+
+.app-footer {
+  border-top-width: 1px;
+}
+
+.app-header .slot, .app-footer .slot {
+  min-height: 56px;
+}
+
+/* تصویر هیرو */
+.hero-img {
+    display: block; 
+    margin: 0 auto;
+  width: 60%;
+  height: auto;
+  border-radius: 1rem;
+}
+
+/* کارت‌ها */
+.card {
+  background-color: #fff;
+  border: 1px solid var(--color-lines);
+  border-radius: 1rem;
+  padding: 1rem;
+}
+
+/* نوار پیشرفت */
+.progress {
+  width: 100%;
+  height: 8px;
+  background-color: var(--color-lines);
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.progress-bar {
+  height: 100%;
+  background-color: var(--color-primary);
+  width: 0%;
+  transition: width 200ms ease;
+}
+
+/* آپلود تصویر */
+.upload-box {
+  border: 2px dashed var(--color-lines);
+  border-radius: 1rem;
+  padding: 1rem;
+  text-align: center;
+}
+
+.preview-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: .75rem;
+}
+
+.preview-item img {
+  width: 100%;
+  height: auto;
+  border-radius: .75rem;
+  border: 1px solid var(--color-lines);
+}
+
+/* لینک‌ها در فوتر */
+.footer-link {
+  color: var(--color-muted);
+  text-decoration: none;
+}
+
+.footer-link:hover {
+  text-decoration: underline;
+}
+
+/* گزینه‌های پرسشنامه */
+.option {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: .75rem;
+  width: 100%;
+  border: 1px solid var(--color-lines);
+  border-radius: 0.75rem;
+  padding: 0.75rem 0.875rem;
+  background-color: #fff;
+  color: var(--color-text);
+  transition: border-color 150ms ease, background-color 150ms ease;
+}
+
+.option:hover {
+  background-color: #fafafa;
+}
+
+.option-selected {
+  border-color: var(--color-primary);
+  background-color: rgba(207, 228, 215, 0.4); /* رنگ اصلی با شفافیت */
+}
+
+.option-label {
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+.check-icon {
+  width: 22px;
+  height: 22px;
+  border-radius: 999px;
+  border: 2px solid var(--color-primary);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  transition: background-color 150ms ease, color 150ms ease, border-color 150ms ease;
+  color: transparent;
+}
+
+.option-selected .check-icon {
+  background-color: var(--color-primary);
+  color: #245f46; /* متن سبز تیره از رنگ اصلی */
+  border-color: var(--color-primary);
+}
+
+
+  

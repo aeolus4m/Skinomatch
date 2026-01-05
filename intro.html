@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>معرفی ارزیابی - Skinomatch</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="rtl">
+  <header class="app-header">
+    <div class="container px-4 py-3 flex items-center justify-between">
+      <div class="slot flex items-center gap-2">
+        <img src="logo.png" alt="Skinomatch" class="w-8 h-8">
+        <span class="font-semibold">Skinomatch</span>
+      </div>
+      <button class="slot text-muted">🌐</button>
+    </div>
+  </header>
+
+  <main class="container px-4 py-6">
+    <h1 class="text-lg font-bold mb-4">پیش از شروع</h1>
+    <div class="card mb-4">
+      <p class="mb-2">این ارزیابی کوتاه با سوالات کاربردی رفتار پوست شما را در زندگی روزمره می‌سنجد.</p>
+      <p class="mb-2">نحوه کار تشخیص: خشکی، چربی، حساسیت و الگوهای نواحی صورت امتیازدهی می‌شوند.</p>
+      <p class="mb-2">نام یا اطلاعات تماس نمی‌گیریم—فقط پاسخ‌های لازم برای نتیجه.</p>
+      <p class="mb-2">می‌توانید برای مشاهده بهتر، به‌صورت اختیاری عکس اضافه کنید.</p>
+    </div>
+
+    <div class="flex items-center gap-2 mb-4">
+      <input id="accept" type="checkbox" class="w-5 h-5">
+      <label for="accept" class="text-sm">می‌پذیرم و آماده ادامه هستم.</label>
+    </div>
+
+    <button id="continueBtn" class="btn bg-primary text-white w-full" disabled onclick="goTo('questionnaire.html')">ادامه</button>
+  </main>
+
+  <footer class="app-footer">
+    <div class="container px-4 py-4 flex flex-col sm:flex-row items-center justify-between gap-2 text-xs text-muted">
+      <div>© 2026 Skinomatch</div>
+      <div class="flex items-center gap-4">
+        <a class="footer-link" href="#">حریم خصوصی</a>
+        <a class="footer-link" href="#">شرایط استفاده</a>
+      </div>
+      <div class="text-[11px]">این برنامه جایگزین مشاوره پزشکی نیست.</div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

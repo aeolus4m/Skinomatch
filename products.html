@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>محصولات پیشنهادی - Skinomatch</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="rtl">
+  <header class="app-header">
+    <div class="container px-4 py-3 flex items-center justify-between">
+      <div class="slot flex items-center gap-2">
+        <img src="logo.png" alt="Skinomatch" class="w-8 h-8">
+        <span class="font-semibold">Skinomatch</span>
+      </div>
+      <button class="slot text-muted">🌐</button>
+    </div>
+  </header>
+
+  <main class="container px-4 py-6">
+    <h1 class="text-lg font-bold mb-4">محصولات پیشنهادی براساس روتین</h1>
+    <div class="grid grid-cols-1 gap-4">
+      <!-- محصول 1 -->
+      <div class="card flex items-center gap-3">
+        <img src="https://picsum.photos/seed/moisturizer/120/120" alt="مرطوب‌کننده" class="w-20 h-20 rounded-lg border border-lines">
+        <div class="flex-1">
+          <h2 class="font-semibold text-sm mb-1">مرطوب‌کننده سبک روزانه</h2>
+          <p class="text-xs text-muted mb-2">فاقد چربی، مناسب تیپ مختلط/چرب</p>
+          <a class="btn bg-primary text-white text-sm" href="https://example.com/product/moisturizer" target="_blank">خرید</a>
+        </div>
+      </div>
+      <!-- محصول ۲ -->
+      <div class="card flex items-center gap-3">
+        <img src="https://picsum.photos/seed/cleanser/120/120" alt="پاک‌کننده" class="w-20 h-20 rounded-lg border border-lines">
+        <div class="flex-1">
+          <h2 class="font-semibold text-sm mb-1">پاک‌کننده ملایم روزانه</h2>
+          <p class="text-xs text-muted mb-2">بدون سولفات، مناسب پوست حساس</p>
+          <a class="btn bg-primary text-white text-sm" href="https://example.com/product/cleanser" target="_blank">خرید</a>
+        </div>
+      </div>
+      <!-- محصول ۳ -->
+      <div class="card flex items-center gap-3">
+        <img src="https://picsum.photos/seed/serum/120/120" alt="سرم" class="w-20 h-20 rounded-lg border border-lines">
+        <div class="flex-1">
+          <h2 class="font-semibold text-sm mb-1">سرم هیالورونیک اسید</h2>
+          <p class="text-xs text-muted mb-2">آبرسان قوی برای بافت یکنواخت‌تر</p>
+          <a class="btn bg-primary text-white text-sm" href="https://example.com/product/serum" target="_blank">خرید</a>
+        </div>
+      </div>
+      <!-- محصول ۴ -->
+      <div class="card flex items-center gap-3">
+        <img src="https://picsum.photos/seed/sunscreen/120/120" alt="ضدآفتاب" class="w-20 h-20 rounded-lg border border-lines">
+        <div class="flex-1">
+          <h2 class="font-semibold text-sm mb-1">ضدآفتاب SPF 50</h2>
+          <p class="text-xs text-muted mb-2">بدون رایحه، محافظت گسترده UVA/UVB</p>
+          <a class="btn bg-primary text-white text-sm" href="https://example.com/product/sunscreen" target="_blank">خرید</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- دکمه بازگشت به صفحه اصلی -->
+    <button class="btn bg-accent text-white w-full mt-6" onclick="goTo('index.html')">بازگشت به صفحه اصلی</button>
+  </main>
+
+  <footer class="app-footer">
+    <div class="container px-4 py-4 flex flex-col items-center gap-2 text-xs text-muted text-center">
+      <div>© 2026 Skinomatch</div>
+      <div class="flex items-center gap-4">
+        <a class="footer-link" href="#">حریم خصوصی</a>
+        <a class="footer-link" href="#">شرایط استفاده</a>
+      </div>
+      <div class="text-[11px]">این برنامه جایگزین مشاوره پزشکی نیست.</div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

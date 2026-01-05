@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>آپلود اختیاری تصاویر - Skinomatch</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="rtl">
+  <header class="app-header">
+    <div class="container px-4 py-3 flex items-center justify-between">
+      <div class="slot flex items-center gap-2">
+        <img src="logo.png" alt="Skinomatch" class="w-8 h-8">
+        <span class="font-semibold">Skinomatch</span>
+      </div>
+      <button class="slot text-muted">🌐</button>
+    </div>
+  </header>
+
+  <main class="container px-4 py-6">
+    <h1 class="text-lg font-bold mb-3">آپلود اختیاری عکس‌های صورت</h1>
+    <p class="text-sm text-muted mb-4">عکس می‌تواند به مشاهده منافذ، بافت و قرمزی کمک کند. کاملاً اختیاری است.</p>
+
+    <div class="card mb-4">
+      <h2 class="font-semibold mb-2">چرا عکس می‌تواند کمک کند</h2>
+      <ul class="list-disc pr-5 text-sm text-muted">
+        <li>به مشاهده خودتان از بافت و درخشندگی کمک می‌کند.</li>
+        <li>به توجه به نواحی خشک‌تر یا چرب‌تر کمک می‌کند.</li>
+        <li>وضعیت پایه شما را برای مقایسه‌های بعدی ثبت می‌کند.</li>
+      </ul>
+    </div>
+
+    <div class="upload-box mb-3">
+      <input id="photoInput" type="file" accept="image/*" multiple>
+      <p class="text-xs text-muted mt-2">حداکثر ۳ تصویر. می‌توانید این مرحله را رد کنید.</p>
+    </div>
+
+    <div id="previewGrid" class="preview-grid mb-4"></div>
+
+    <button class="btn bg-primary text-white w-full" onclick="goTo('result.html')">ادامه</button>
+  </main>
+
+  <footer class="app-footer">
+    <div class="container px-4 py-4 flex flex-col items-center gap-2 text-xs text-muted text-center">
+      <div>© 2026 Skinomatch</div>
+      <div class="flex items-center gap-4">
+        <a class="footer-link" href="#">حریم خصوصی</a>
+        <a class="footer-link" href="#">شرایط استفاده</a>
+      </div>
+      <div class="text-[11px]">این برنامه جایگزین مشاوره پزشکی نیست.</div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
