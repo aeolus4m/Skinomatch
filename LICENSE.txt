@@ -1,0 +1,7 @@
+Copyright (c) 2026 aeolus4m
+
+All rights reserved.
+
+No part of this project may be copied, modified, distributed,
+or used for any purpose without explicit written permission
+from the copyright holder.
