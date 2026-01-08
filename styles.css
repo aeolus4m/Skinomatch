@@ -19,7 +19,14 @@ body {
   font-family: 'Vazirmatn', system-ui, -apple-system, Segoe UI, Roboto, 'Helvetica Neue', Arial, 'Noto Sans', 'Liberation Sans', sans-serif;
   background-color: var(--color-bg);
   color: var(--color-text);
+
+  display: flex; 
+  flex-direction: column; /* چینش عمودی */
 }
+
+html, body { height: 100%; /* کل ارتفاع صفحه */ margin: 0; /* حذف فاصله پیش‌فرض */ }
+
+main { flex: 1; /* بخش اصلی فضای خالی رو پر کنه */ }
 
 .rtl {
   direction: rtl;
